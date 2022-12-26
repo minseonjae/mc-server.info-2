@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/list.css">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap/icon/bootstrap-icons.css">
+    </head>
+    <body class="h-100 bg-lightlightgreen">
+        <header>
+            <div class="container-fluid">
+                <div class="row bg-gray">
+                    <a class="offset-lg-1 col-lg-2 col-12 bg-darkgary text-center text-black text-decoration-none" href="">
+                        <h1 class="logo text-white">MCSI</h1>
+                    </a>
+                    <ul class="col-12 nav justify-content-center bg-darkgary">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">STATS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">ADD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">FAVORITE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown-menu1" data-bs-toggle="dropdown" aria-expanded="false">LIST</a>
+                            <ul class="dropdown-menu dropdown-menu-dark mx-0 border-0 shadow">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Documents
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Photos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Movies
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Music
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Games
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Trash
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <br>
+
+        <br>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10">
+                        <div class="row mx-1">
+                            <a href="#" class="col-lg-10 col-12 serverinfo text-dark text-decoration-none">
+                                <div class="row">
+                                    <div class="col-lg-2 col-12 server-order bg-gray text-white">
+                                        <h4>#1</h4>
+                                    </div>
+                                    <div class="col-lg-5 col-12 p-2">
+                                        <h4 class="float-lg-none float-start">풀잎서버</h4>
+                                        <p class="float-lg-start float-end"><i class="bi bi-reception-4"></i> 12 / 1000</p>
+                                    </div>
+                                    <div class="col-lg-5 col-12">
+                                        <canvas id="chart" class="minichart"></canvas>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="serverinfo col-lg-2 col-12">
+                                <div class="list-group row">
+                                    <div class="list-group-item my-auto col-12 h-50">
+                                        <p class="text-center">leafserver.kr</p>
+                                    </div>
+                                    <div class="list-group-item my-auto col-12 h-50">
+                                        <p class="text-center">leafserver.kr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10 col-12">
+                        <hr>
+                        <p class="text-center text-lg-end">© 2022 Copyright: <a class="text-black text-decoration-none" href="https://codingtree.kr">codingtree.kr</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="lib/popperjs/popper.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="lib/highstock/highstock.js"></script>
+        <script src="lib/highstock/modules/data.js"></script>
+        <script src="lib/highstock/modules/accessibility.js"></script>
+
+        <script src="lib/chartjs/chart.js"></script>
+
+        <script type="text/javascript">
+            const ctx = document.getElementById("chart").getContext("2d");
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: 'players',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(0, 0, 0, 1)'
+                        ],
+                        borderColor: [
+                            'rgba(0, 0, 0, 1)'
+                        ],
+                        radius: 1,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function () {}
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

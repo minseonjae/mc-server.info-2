@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap/icon/bootstrap-icons.css">
+    </head>
+    <body class="h-100 bg-lightlightgreen">
+        <header>
+            <div class="container-fluid">
+                <div class="row bg-gray">
+                    <a class="offset-lg-1 col-lg-2 col-12 bg-darkgary text-center text-black text-decoration-none" href="">
+                        <h1 class="logo text-white">MCSI</h1>
+                    </a>
+                    <ul class="col-12 nav justify-content-center bg-darkgary">
+                        <li class="nav-item">
+                            <a id="stats" class="nav-link text-white" style="cursor: pointer">STATS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="add" class="nav-link text-white" style="cursor: pointer">ADD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">FAVORITE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown-menu1" data-bs-toggle="dropdown" aria-expanded="false">LIST</a>
+                            <ul class="dropdown-menu dropdown-menu-dark mx-0 border-0 shadow">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Documents
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Photos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Movies
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Music
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Games
+                                    </a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Trash
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <br>
+        <br>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10">
+                        <div class="collapse row" id="addCollapse">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-7">
+                                    <div class="card border-secondary mb-3">
+                                        <div class="card-body">
+                                            <h4 class="card-title">서버 추가 시 주의 사항</h4>
+                                            <p class="card-text">
+                                                Minecraft Java Edition (PC) 서버만 추가하실 수 있습니다.
+                                                <br>
+                                                Java Edition 서버의 기본 포트는 <strong>25565</strong>입니다.
+                                                <br>
+                                                <br>
+                                                서버 이름을 적으실 때에는 <strong><abbr title="attribute">풀잎서버</abbr></strong>중에서 <strong><abbr title="attribute">풀잎</abbr></strong>만 적으면 되며,
+                                                <br>
+                                                서버가 온라인(켜진 상태)일 때에만 추가가 가능합니다.
+                                                <br>
+                                                <br>
+                                                또한 서버를 등록하는 이용자와 등록하는 서버의
+                                                <br>
+                                                아이피 주소가 모두 한국 아이피여야 합니다.
+                                                <br>
+                                                <br>
+                                                <br>
+                                                서버가 SRV 레코드를 사용 중에 있어도 추가하실 수 있습니다!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-5">
+                                    <div class="card border-secondary mb-3">
+                                        <div class="card-body">
+                                            <form action="add.php" method="POST">
+                                                <div class="form-group">
+                                                    <label>서버 이름</label>
+                                                    <input class="form-control" type="text" name="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>서버 주소</label>
+                                                    <input class="form-control" type="text" name="ip">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>서버 포트</label>
+                                                    <input class="form-control" type="text" name="port" placeholder="25565">
+                                                </div>
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" name="check">
+                                                    <strong><abbr title="">이용약관</abbr></strong></a> 및
+                                                    <strong><abbr title="">개인정보취급방침</abbr></strong>에 동의합니다.
+                                                </label>
+                                                <br><br>
+                                                <input class="btn btn-secondary btn-lg btn-block" type="submit" value="추가">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse row" id="chartCollapse">
+                            <div class="col-12">
+                                <div class="card border-secondary">
+                                    <div class="card-body">
+                                        전체 동시 접속자 그래프
+                                        <div id="playerchart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse row" id="mainCollapse">
+                            <div class="col-md-12 col-lg-8">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="card border-secondary mb-3">
+                                            <div class="card-body">
+                                                <br>
+                                                <strong>전체 동시 접속자</strong>
+                                                <br>
+                                                <small>641명</small>
+                                                <br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="card border-secondary mb-3">
+                                            <div class="card-body">
+                                                <br>
+                                                <strong>등록된 서버 개수</strong>
+                                                <br>
+                                                <small>44개</small>
+                                                <br><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-4">
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-body">
+                                        <strong>
+                                            최고 전체 동시 접속자
+                                        </strong>
+                                        <br>
+                                        <small>3079명</small>
+                                        <br><br>
+                                        <small>2020-02-26 오후 01:21:15</small>
+                                    </div>
+                                </div>
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-body">
+                                        <strong>
+                                            오늘 최고 전체 동시 접속자
+                                        </strong>
+                                        <br>
+                                        <small>773명</small>
+                                        <br><br>
+                                        <small>오전 12:08:15</small>
+                                    </div>
+                                </div>
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-body">
+                                        <strong>
+                                            어제 최고 전체 동시 접속자
+                                        </strong>
+                                        <br>
+                                        <small>1209명</small>
+                                        <br><br>
+                                        <small>오후 08:52:15</small>
+                                    </div>
+                                </div>
+                                <div class="card border-secondary mb-3">
+                                    <div class="card-body">
+                                        버전 통계
+                                        <canvas id="version"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-lg-1 col-lg-10">
+                        <hr>
+                        <p class="text-center text-lg-end">© 2022 <a class="text-black text-decoration-none" href="https://codingtree.kr">codingtree.kr</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <br>
+        <script src="lib/popperjs/popper.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="lib/highstock/highstock.js"></script>
+        <script src="lib/highstock/modules/data.js"></script>
+        <script src="lib/highstock/modules/accessibility.js"></script>
+
+        <script type="text/javascript">
+            var showPage = 0;
+            var mainCollapse = new bootstrap.Collapse(document.getElementById("mainCollapse"), {
+                toggle: false
+            });
+            var chartCollapse = new bootstrap.Collapse(document.getElementById("chartCollapse"), {
+                toggle: false
+            });
+            var addCollapse = new bootstrap.Collapse(document.getElementById("addCollapse"), {
+                toggle: false
+            });
+
+            mainCollapse.show();
+
+            document.getElementById("stats").onclick = function () {
+                if (chartCollapse._isShown()) {
+                    chartCollapse.hide();
+                    mainCollapse.show();
+                } else {
+                    if (mainCollapse._isShown()) {
+                        mainCollapse.hide();
+                    }
+                    if (addCollapse._isShown()) {
+                        addCollapse.hide();
+                    }
+                    chartCollapse.show();
+                }
+            }
+            document.getElementById("add").onclick = function () {
+                if (addCollapse._isShown()) {
+                    addCollapse.hide();
+                    mainCollapse.show();
+                } else {
+                    if (mainCollapse._isShown()) {
+                        mainCollapse.hide();
+                    }
+                    if (chartCollapse._isShown()) {
+                        chartCollapse.hide();
+                    }
+                    addCollapse.show();
+                }
+            }
+
+
+
+            Highcharts.getJSON('data.json', function (data) {
+                // Create the chart
+                Highcharts.stockChart('playerchart', {
+                    rangeSelector: {
+                        selected: 0,
+                        // buttons: [
+                        //     {
+                        //         type: 'day',
+                        //         count: 7,
+                        //         text: '일주일',
+                        //         title: '일주일치 데이터 보기'
+                        //     }
+                        // ]
+                    },
+
+                    series: [{
+                        name: 'Players',
+                        data: data,
+                        tooltip: {
+                            valueDecimals: 2
+                        }
+                    }]
+                });
+            });
+
+        </script>
+    </body>
+</html>

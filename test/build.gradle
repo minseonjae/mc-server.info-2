@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'kr.codingtree'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.codingtree.kr/repository/maven-public/'
+    }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/list.css">
+        <link rel="stylesheet" href="lib/boxicons/css/boxicons.min.css">
+    </head>
+    <body class="container-fluid">
+        <header class="row menu">
+            <h1 class="offset-m-1 col-m-2 col-12 logo">
+                MCSI
+            </h1>
+            <ul class="col-12 menubar">
+                <li>
+                    <a href="#">
+                        STATS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ADD
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        FAVORITE
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        LIST
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <section class="row">
+            <div class="offset-m-1 col-m-7 offset-1">
+                <div class="row">
+                    <a class="list" href="#">
+                        <div class="col-m-1-5 col-12 list-count">
+                            <p class="list-count-text">#1</p>
+                        </div>
+                        <div class="col-m-3 col-12 list-server">
+                            <p class="list-server-name">풀잎서버</p>
+                            <i class="bx bx-no-signal list-server-ping"></i><p class="list-server-players">0 / 1000</p>
+                        </div>
+                        <div class="col-m-3 col-12">
+                            <canvas id="chart" class="list-server-chart"></canvas>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-m-3">
+                <div class="list">
+                    ddd
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script src="lib/chartjs/chart.js"></script>
+    <script src="js/testchart.js"></script>
+</html>

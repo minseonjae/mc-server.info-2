@@ -1,0 +1,4 @@
+# 프로젝트 제외 경로
+/test/.gradle/
+/test/build/
+/test/build/classes/java/main/

@@ -1,0 +1,89 @@
+
+.list {
+    border: 1px #232323 solid;
+    border-radius: 2px;
+    text-decoration-line: none;
+    color: #000000;
+}
+.list:hover {
+    background-color: #fafafa;
+}
+.list-count {
+    background-color: #232323;
+
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+}
+.list-count-text {
+    margin: auto;
+    font-weight: bolder;
+}
+.list-server {
+    margin: auto;
+}
+.list-server > * {
+    margin: 10px;
+    font-size: 18px;
+}
+.list-server-name {
+    font-weight: bold;
+    float: left;
+}
+.list-server-players {
+    float: right;
+    display: inline;
+}
+.list-server-ping {
+    color: lightgreen;
+    font-size: 20px;
+    display: inline;
+}
+.list-server-chart {
+    max-height: 120px;
+}
+
+.list-server-address {
+    margin: 0;
+    padding: 0;
+}
+.list-server-address * {
+    max-width: 100%;
+    max-height: 100%;
+}
+.list-server-address-text {
+    margin: auto;
+
+    height: 50%;
+
+    background-color: #1D8B15;
+}
+.list-server-address-button {
+    border: none;
+
+    width: 100%;
+
+    height: 50%;
+
+    color: #ffffff;
+    background-color: #323232;
+}
+
+@media (min-width: 900px) {
+    .list * {
+        max-height: 120px;
+    }
+
+    .list-server > * {
+        margin: 0;
+    }
+    .list-server-name {
+        float: none;
+    }
+    .list-server-players {
+        float: none;
+    }
+
+    .list-server-address {
+    }
+}
