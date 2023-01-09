@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://repo.codingtree.kr/repository/maven-public/'
+    }
+}
+
+dependencies {
+    implementation 'org.yaml:snakeyaml:1.33'
+    implementation 'com.google.code.gson:gson:2.9.1'
+
+    implementation 'com.zaxxer:HikariCP:4.0.3'
+
+    implementation 'kr.codingtree:platformconfig:0.0.3'
+    implementation 'kr.codingtree:fieldconfig:0.0.2'
+
+    implementation 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+}

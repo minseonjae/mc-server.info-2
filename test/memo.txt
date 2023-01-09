@@ -1,0 +1,5 @@
+WHERE DATE_FORMAT(time, '%Y-%M-%d %H-%m') = '2023-01-07 10:11'
+ORDER BY player_count DESC
+
+WHERE time = '2023-01-07 10:11'
+ORDER BY player_count DESC

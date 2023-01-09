@@ -4,13 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fef5fef9-389b-4e61-a50e-f7e701bbe5f6" name="변경" comment="" />
+    <list default="true" id="fef5fef9-389b-4e61-a50e-f7e701bbe5f6" name="변경" comment="#1 Readme 수정">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/SQL Table.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/추가 및 수정 해야할 목록.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/command/CommandExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/command/ConsoleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/commands/DebugCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/CommandLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/ConsoleTextArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/ConsoleTextAreaScroll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/InputCommandField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/listener/CommandFieldKeyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/listener/ComponentFocusListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/listener/ConsoleCloseListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/gui/thread/CommandLabelBlinkThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/stream/ConsoleOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/console/stream/ConsolePrintStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/mcsi/MCServerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/mcsi/ProgramMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/mcsi/sql/SqlConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/mcsi/sql/SqlManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/net/pooleaf/sql/AbstractSqlManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/net/pooleaf/sql/LPreparedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/net/pooleaf/sql/SqlColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser/src/main/java/net/pooleaf/sql/SqlTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/memo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/kr/codingtree/test/FileNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/AbstractSqlManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/CPreparedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/CachedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/CachedResultRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/SqlColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/SqlDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/SqlTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/dslcontext/DeleteContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/dslcontext/DslContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/dslcontext/InsertContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/dslcontext/SelectContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/net/pooleaf/sqllib/dslcontext/UpdateContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/memo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/kr/codingtree/mcsi/McsiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/kr/codingtree/mcsi/McsiApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/parser">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/server">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/test">
       <ProjectState />
     </projectState>
@@ -45,35 +116,43 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HaVIJI4fwPNmuHsJyfjZh9ufUJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/src/main/java/org/xbill" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="모듈" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.20930232" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/seonjae/Desktop/Programming/Project/IntelliJ/mc-server.info/demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo" />
+      <recent name="$PROJECT_DIR$/parser/src/main/java/net/pooleaf/sql" />
+      <recent name="$PROJECT_DIR$/parser/src/main/java/kr/codingtree/mcsi" />
+      <recent name="$PROJECT_DIR$/parser/src/main/java/net/pooleaf" />
       <recent name="$PROJECT_DIR$/test/src/main/java/org/xbill" />
-      <recent name="$PROJECT_DIR$/demo/직접제작/css" />
-      <recent name="$PROJECT_DIR$/demo/직접제작" />
-      <recent name="$PROJECT_DIR$/demo/css" />
-      <recent name="$PROJECT_DIR$/demo/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo/직접제작/lib/boxicons" />
@@ -83,7 +162,20 @@
       <recent name="kr.codingtree.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript 디버그.index.html (1)">
+  <component name="RunManager" selected="애플리케이션.MCSocketSRV">
+    <configuration name="FileNameTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.codingtree.test.FileNameTest" />
+      <module name="test.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.codingtree.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MCSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kr.codingtree.test.MCSocket" />
       <module name="test.main" />
@@ -116,9 +208,6 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mc-server.info/demo/라이브러리 활용/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/mc-server.info/demo/라이브러리 활용/test.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="McsiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mcsi.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kr.codingtree.mcsi.McsiApplication" />
@@ -128,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.FileNameTest" />
         <item itemvalue="JavaScript 디버그.index.html (1)" />
         <item itemvalue="애플리케이션.MCSocketSRV" />
         <item itemvalue="애플리케이션.MCSocket" />
         <item itemvalue="JavaScript 디버그.index.html" />
-        <item itemvalue="JavaScript 디버그.test.html" />
       </list>
     </recent_temporary>
   </component>
@@ -160,11 +249,51 @@
       <workItem from="1671125945514" duration="286000" />
       <workItem from="1671200626025" duration="2797000" />
       <workItem from="1671203706917" duration="673000" />
-      <workItem from="1672054453293" duration="202000" />
+      <workItem from="1672054453293" duration="497000" />
+      <workItem from="1672054986750" duration="50000" />
+      <workItem from="1672055611332" duration="598000" />
+      <workItem from="1672150138727" duration="659000" />
+      <workItem from="1672203975744" duration="102000" />
+      <workItem from="1672204090382" duration="65000" />
+      <workItem from="1672204166165" duration="134000" />
+      <workItem from="1672204415588" duration="1225000" />
+      <workItem from="1672394655421" duration="4391000" />
+      <workItem from="1672813614828" duration="955000" />
+      <workItem from="1672816268348" duration="35000" />
+      <workItem from="1672821540268" duration="688000" />
+      <workItem from="1672829536039" duration="413000" />
+      <workItem from="1672829957465" duration="515000" />
+      <workItem from="1672830489926" duration="4192000" />
+      <workItem from="1672994769633" duration="48000" />
+      <workItem from="1672999248082" duration="35000" />
+      <workItem from="1673007647970" duration="15001000" />
     </task>
+    <task id="LOCAL-00001" summary="#1 Readme 수정">
+      <created>1672054806173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672054806173</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#1 Readme 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="#1 Readme 수정" />
   </component>
 </project>
