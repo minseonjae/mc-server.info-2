@@ -20,7 +20,7 @@ public class AbstractSqlManager {
 		try {
 			dataSource = new HikariDataSource(mcsi.getSqlConfig().getHikariConfig());
 
-			createTable();
+			onConnected();
 
 			mcsi.getConsole().log((mcsi.getSqlConfig().getType() > 0 ? "MariaDB" : "MySQL") + "에 연결되었습니다.");
 		} catch(Exception e) {
@@ -29,8 +29,6 @@ public class AbstractSqlManager {
 			mcsi.getConsole().log((mcsi.getSqlConfig().getType() > 0 ? "MariaDB" : "MySQL") + "에 연결할 수 없습니다.");
 			return false;
 		}
-
-		onConnected();
 
 		return true;
 	}
@@ -61,11 +59,10 @@ public class AbstractSqlManager {
 
 		mcsi.getConsole().debugLog("SQL Update: " + sql);
 
-		@Cleanup Connection conn = dataSource.getConnection();
-		@Cleanup PreparedStatement state = conn.prepareStatement(sql);
+		@Cleanup PreparedStatement state = getPreparedStatement(sql);
 		state.executeUpdate();
 	}
-	
+
 	public void update(String sql, Object...args) {
 		update(String.format(sql, args));
 	}
@@ -80,10 +77,8 @@ public class AbstractSqlManager {
 		return getPreparedStatement(String.format(sql, args));
 	}
 	
-	public void createTable() { }
-	
-	public void createTable(String name, String calumn) {
-		update("create table if not exists " + name + " (" + calumn + ")");
+	public void createTable(String name, String column) {
+		update("create table if not exists " + name + " (" + column + ")");
 	}
 	
 	public void deleteTable(String name) {

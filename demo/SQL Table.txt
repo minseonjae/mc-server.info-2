@@ -1,24 +1,46 @@
+1. server_list table
+create table if not exists
+server_list (
+id int primary key not null auto_increment,
+address varchar(64),
+port int,
+name varchar(16),
+ranking_ban boolean,
+date date,
+time time
+)
+
+2. server_data table
+create table if not exists
+server_data (
+id int,
+ping int,
+protocol int,
+version varchar(32),
+max_players int,
+online_players int,
+srv boolean,
+date date,
+time time
+)
+
+3. server_motd table
+create table if not exists
+server_motd (
+id int,
+motd varchar(255),
+date date,
+time time
+)
 
 
-1. server_list
-id int primary key not null auto_increment
-address varchar(64)
-port int
-name varchar(16)
-ban int
+select
+date date, max(online_players) online_players
+from
+test.server_data
+where id = 0
+group by date
+order by date desc
 
-2. server_info
-id int
-
-motd varchar(255)
-
-ping int
-srv int
-
-version varchar(32)
-protocol int
-
-max_players int
-online_players int
-
-time datetime
+Motd 가져오는거
+select * from test.server_motd where id = 0 order by date DESC, time DESC limit 1

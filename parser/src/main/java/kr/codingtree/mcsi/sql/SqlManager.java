@@ -1,15 +1,27 @@
 package kr.codingtree.mcsi.sql;
 
+import kr.codingtree.mcsi.sql.table.DataTable;
+import kr.codingtree.mcsi.sql.table.ListTable;
+import kr.codingtree.mcsi.sql.table.MotdTable;
+import lombok.Getter;
 import net.pooleaf.sql.AbstractSqlManager;
-import net.pooleaf.sql.SqlTable;
 
 public class SqlManager extends AbstractSqlManager {
 
-    private SqlTable listTable, dataTable;
+    @Getter
+    private ListTable listTable;
+
+    @Getter
+    private DataTable dataTable;
+
+    @Getter
+    private MotdTable motdTable;
+
 
     @Override
-    public void createTable() {
-        listTable = new SqlTable(this, "server_list", "id int primary key not null auto_increment, address varchar(64), port int, name varchar(16), ban int").createTable();
-        dataTable = new SqlTable(this, "server_data", "id int, ping int, protocol int, version varchar(64), max_players int, online_players int, motd varchar(255), srv int, time datetime").createTable();
+    public void onConnected() {
+        listTable = new ListTable(this);
+        dataTable = new DataTable(this);
+        motdTable = new MotdTable(this);
     }
 }
